@@ -1,13 +1,13 @@
 language: node_js
 node_js:
   - 11.6.0
-cache: npm
+cache: yarn
 
 install:
-  - npm install
+  - yarn install
 
 script:
-  - npm run build --prod
+  - yarn run build 
   
 deploy:
   provider: pages
